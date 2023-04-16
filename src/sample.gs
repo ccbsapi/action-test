@@ -1,3 +1,3 @@
 function sample(){
-  Logger.log("Deployed from GitHub successfully!");
+  Logger.log("Deployed from GitHub!");
 }

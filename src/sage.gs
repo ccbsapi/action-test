@@ -24,6 +24,6 @@ function f_search_sage(code){
   return res;
 }
 
-test(){
+function test(){
   Logger.log(f_search_sage('print(3*5)'));
 }

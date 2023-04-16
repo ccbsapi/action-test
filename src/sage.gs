@@ -1,7 +1,9 @@
 function f_search_sage(code){
   const endpoint = "https://benri.ga/api/sage.py";
   const url = endpoint + "?code=" + encodeURIComponent(code);
-  const sage = JSON.parse(UrlFetchApp.fetch(url));
+  const json = UrlFetchApp.fetch(url);
+  Logger.log(json);
+  const sage = JSON.parse(json);
   const {stdout,images,files} = sage;
   const res = [
     {

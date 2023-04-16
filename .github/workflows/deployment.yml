@@ -40,4 +40,4 @@ jobs:
           }
           EOS
       - name: deploy
-        run: clasp push
+        run: clasp push -f

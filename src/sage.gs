@@ -17,10 +17,10 @@ function f_search_sage(code){
       content : 'Files:\n'+files.join('\n'),
     });
   }
-  for(let i in media){
+  for(let i in images){
     res.push({
       type : 'image',
-      url : media[i],
+      url : images[i],
     })
   }
   return res;
